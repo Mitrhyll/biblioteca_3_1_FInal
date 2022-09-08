@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biblioteca_3_1.Views.Perfil"
+             xmlns:vm="clr-namespace:biblioteca_3_1.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:PerfilViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout BackgroundColor="#FFA07A"  Spacing="400">
+            <StackLayout>
+                <Frame WidthRequest="200" CornerRadius="600" HorizontalOptions="Center" VerticalOptions="Fill" Padding="0">
+                    <Image Source="usuario.png" WidthRequest="200" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Fill" />
+                </Frame>
+                <Label HorizontalOptions="Center">Daniel Mateo Quintero Velandia</Label>
+                <Label HorizontalOptions="Center">Id: 672434</Label>
+                <Label HorizontalOptions="Center">Ingenieria en sistemas</Label>
+                <Label HorizontalOptions="Center">Edad: 22 años</Label>
+                <Button BackgroundColor="#ffe27a" Text="Cambiar imagen" HorizontalOptions="Center"></Button>
+            </StackLayout>
+            <StackLayout >
+                <Grid>
+                    <Label TextColor=" #e27aff" Grid.Row="1" HorizontalTextAlignment="Center" Text="Frase que sera random" />
+                </Grid>
+                <Frame BackgroundColor=" #7ad9ff ">
+                    <Label HorizontalTextAlignment="Center">Derechos reservados</Label>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+ 
+</ContentPage>

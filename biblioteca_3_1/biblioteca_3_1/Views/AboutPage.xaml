@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biblioteca_3_1.Views.AboutPage"
+             xmlns:vm="clr-namespace:biblioteca_3_1.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96a1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+
+    <StackLayout>
+        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceEvenly">
+            <Frame  OutlineColor="#C4B6B4" WidthRequest="150">
+                <Label TextColor="Black" Text="Libros prestados" FontSize="Title"/>
+            </Frame>
+            <Frame   OutlineColor="#C4B6B4" WidthRequest="150">
+                <Label TextColor="Black" Text="Libros en prestamo" FontSize="Title"/>
+            </Frame>
+        </FlexLayout>
+        <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="SpaceAround">
+            <Frame BackgroundColor="Transparent" OutlineColor="Black">
+                <FlexLayout Direction="Column" JustifyContent="SpaceAround">
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                </FlexLayout>
+            </Frame>
+            <Frame BackgroundColor="Transparent" OutlineColor="Black">
+                <FlexLayout Direction="Column" JustifyContent="SpaceAround">
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                    <Label TextColor="Black" Text="Libro" FontSize="25" />
+                </FlexLayout>
+            </Frame>
+        </FlexLayout>
+    </StackLayout>
+
+</ContentPage>
